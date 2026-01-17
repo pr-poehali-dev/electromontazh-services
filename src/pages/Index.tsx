@@ -145,9 +145,16 @@ const Index = () => {
                   электромонтаж
                 </span>
               </h2>
-              <p className="text-xl text-muted-foreground mb-8">
+              <p className="text-xl text-muted-foreground mb-4">
                 Выполняем электромонтажные работы любой сложности. Быстро, качественно, с гарантией.
               </p>
+              <div className="flex items-center gap-3 mb-8 p-4 bg-secondary/10 rounded-xl border-2 border-secondary/20">
+                <Icon name="BadgePercent" size={32} className="text-secondary" />
+                <div>
+                  <p className="font-bold text-lg text-secondary">Скидка 10% пенсионерам!</p>
+                  <p className="text-sm text-muted-foreground">При предъявлении пенсионного удостоверения</p>
+                </div>
+              </div>
               <div className="flex gap-4">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:opacity-90">
                   <Icon name="Calculator" size={20} className="mr-2" />
