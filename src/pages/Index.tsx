@@ -11,6 +11,8 @@ import Icon from '@/components/ui/icon';
 const Index = () => {
   const [area, setArea] = useState('');
   const [serviceType, setServiceType] = useState('');
+  const [quickArea, setQuickArea] = useState('');
+  const [quickType, setQuickType] = useState('');
   const [calculatedPrice, setCalculatedPrice] = useState<number | null>(null);
 
   const services = [
@@ -186,12 +188,14 @@ const Index = () => {
                       id="quick-area" 
                       type="number" 
                       placeholder="Например: 85"
+                      value={quickArea}
+                      onChange={(e) => setQuickArea(e.target.value)}
                       className="mt-1"
                     />
                   </div>
                   <div>
                     <Label htmlFor="quick-type">Тип объекта</Label>
-                    <Select>
+                    <Select value={quickType} onValueChange={setQuickType}>
                       <SelectTrigger className="mt-1">
                         <SelectValue placeholder="Выберите тип" />
                       </SelectTrigger>
