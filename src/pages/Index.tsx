@@ -506,15 +506,11 @@ const Index = () => {
               <ul className="space-y-2 text-background/70">
                 <li className="flex items-center gap-2">
                   <Icon name="Phone" size={16} />
-                  +7 (999) 123-45-67
-                </li>
-                <li className="flex items-center gap-2">
-                  <Icon name="Mail" size={16} />
-                  info@electropro.ru
+                  +7 (900) 220-96-33
                 </li>
                 <li className="flex items-center gap-2">
                   <Icon name="MapPin" size={16} />
-                  г. Москва
+                  г. Смоленск, ул. Раздольная, д. 4
                 </li>
               </ul>
             </div>
